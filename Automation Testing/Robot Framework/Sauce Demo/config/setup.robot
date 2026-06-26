@@ -16,4 +16,3 @@ Clearing Test
     IF    ${isLoggedIn} == ${False}
         Log    login
     END
-    
