@@ -1,6 +1,8 @@
 # Robot Framework - Sauce Demo Automation
 
-Automation testing menggunakan Robot Framework dengan SeleniumLibrary pada website Sauce Demo.
+This project is a UI automation testing framework developed using Robot Framework and SeleniumLibrary for the Sauce Demo web application.
+
+The framework is designed to automate end-to-end user scenarios while applying reusable keywords and a modular project structure. It generates detailed execution reports, logs, and screenshots to support efficient test analysis and maintenance.
 
 ## 🌐 Platform
 
