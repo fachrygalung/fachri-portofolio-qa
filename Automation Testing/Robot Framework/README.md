@@ -74,8 +74,13 @@ After executing the test suite, Robot Framework generates the following reports:
 
 ### Summary Report
 
+- Report Summary Preview
 ![Report](./Sauce%20Demo/screenshot/report%201.png)
+
+- Report Detail Preview
 ![Report](./Sauce%20Demo/screenshot/report%202.png)
+
+- Detail Log Preview
 ![Log](./Sauce%20Demo/screenshot/detail%20log.png)
 
 ## 👨‍💻 Author
