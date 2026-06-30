@@ -6,7 +6,7 @@ Automation testing menggunakan Robot Framework dengan SeleniumLibrary pada websi
 
 - Websites
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - Robot Framework 7.4.2
 - SeleniumLibrary 6.9.0
@@ -14,10 +14,12 @@ Automation testing menggunakan Robot Framework dengan SeleniumLibrary pada websi
 - Chrome Browser
 - VS Code Editor
 - Github Version Control
-- VS Code Extension : RobotCode - Robot Framework Support v2.6.2 by Daniel Biehl
 
+## VS Code Extension
 
-## Project Structure
+- *RobotCode - Robot Framework Support v2.6.2 by Daniel Biehl*
+
+## 📂 Project Structure
 
 ```text
 .
@@ -32,7 +34,7 @@ Automation testing menggunakan Robot Framework dengan SeleniumLibrary pada websi
 └── README.md
 ```
 
-## Installation
+## 🚀 Installation
 
 - this is for robotframework installation
 
@@ -46,7 +48,7 @@ pip install robotframework
 pip install robotframework-seleniumlibrary
 ```
 
-## Run Test
+## ▶️ Run Test
 
 Run all test cases:
 
@@ -59,3 +61,7 @@ Run login test only:
 ```bash
 robot tests/login.robot
 ```
+
+## 👨‍💻 Author
+
+### Fachri Firmansyah Hutagalung
