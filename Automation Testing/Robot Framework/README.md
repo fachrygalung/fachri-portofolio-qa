@@ -13,6 +13,8 @@ Automation testing menggunakan Robot Framework dengan SeleniumLibrary pada websi
 - Python 3.10
 - Chrome Browser
 - VS Code Editor
+- Github Version Control
+- VS Code Extension : RobotCode - Robot Framework Support v2.6.2 by Daniel Biehl
 
 
 ## Project Structure
