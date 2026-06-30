@@ -1,13 +1,13 @@
 *** Variables ***
-${env}        prod
+${env}        dev
 
 ${browser}    chrome
 
-&{url}        dev=https://sauce-demo.myshopify.com/
-...           prod=https://sauce-demo.myshopify.com/
+&{url}        dev=https://www.saucedemo.com/
+...           stg=https://www.saucedemo.com/
 
-&{email}      dev=dev-fachri@yopmail.com
-...           prod=prod-fachri@yopmail.com
+&{username}      dev=standard_user
+...              stg=standard_user_staging
 
-&{pass}       dev=demoSauceDev@123
-...           prod=demoSauce@123
+&{pass}       dev=secret_sauce
+...           stg=secret_sauce_staging

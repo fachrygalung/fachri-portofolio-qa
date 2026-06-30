@@ -6,7 +6,7 @@ Resource   ../resources/keywords/loginStep.robot
 *** Keywords ***
 Open Browser and Navigate to Sauce Demo
     Open Browser    browser=${browser}    url=${url}[${env}]
-    Wait Until Element Is Visible    locator=xpath=//h1[@id="logo"]  timeout=10s  error=browser not loaded
+    Wait Until Element Is Visible    locator=xpath=//div[@class="login_logo"]    timeout=10s  error=browser not loaded
 
 Clearing Test
     Go To    url=${url}[${env}]

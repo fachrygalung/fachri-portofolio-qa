@@ -1,9 +1,8 @@
-buttonLogin= 'xpath=//a[@id="customer_login_link"]'
-buttonSignIn= 'xpath=//input[@value="Sign In"]'
-buttonMyAccount = "xpath=//a[text()='My Account'][@href='/account']"
-buttonLogOut = 'xpath=//a[@id="customer_logout_link"]'
+buttonLogin= 'id=login-button'
 
-inputEmail= 'xpath=//input[@id="customer_email"]'
-inputPass= 'xpath=//input[@id="customer_password"]'
+inputUsername= 'id=user-name'
+inputPass= 'id=password'
 
-errorShown= "xpath=//div[@class='errors']//li"
+errorShown= 'xpath=//div[@class="error-message-container error"]'
+
+shopCartIcon = 'id=shopping_cart_container'
