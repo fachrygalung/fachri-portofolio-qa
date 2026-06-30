@@ -2,7 +2,7 @@
 
 Automation testing menggunakan Robot Framework dengan SeleniumLibrary pada website Sauce Demo.
 
-## Platform
+## 🌐 Platform
 
 - Websites
 
@@ -15,7 +15,7 @@ Automation testing menggunakan Robot Framework dengan SeleniumLibrary pada websi
 - VS Code Editor
 - Github Version Control
 
-## VS Code Extension
+## 🔌 VS Code Extension
 
 - *RobotCode - Robot Framework Support v2.6.2 by Daniel Biehl*
 
@@ -61,6 +61,22 @@ Run login test only:
 ```bash
 robot tests/login.robot
 ```
+
+## 📊 Test Reports
+
+After executing the test suite, Robot Framework generates the following reports:
+
+| File | Description |
+|------|-------------|
+| `report.html` | Test execution summary |
+| `log.html` | Detailed execution log |
+| `output.xml` | Test execution result in XML format |
+
+### Summary Report
+
+![Report](Sauce Demo/screenshot/report 1.png)
+![Report](Sauce Demo/screenshot/report 2.png)
+![Log](Sauce Demo/screenshot/detail log.png)
 
 ## 👨‍💻 Author
 
