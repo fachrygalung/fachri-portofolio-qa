@@ -14,6 +14,36 @@ Automation testing menggunakan Robot Framework dengan SeleniumLibrary pada websi
 - Chrome Browser
 - VS Code Editor
 
+
+## Project Structure
+
+```text
+.
+├── config/
+├── resources/
+│   ├── keywords/
+│   ├── locators/
+│   ├── utils/
+├── reports/
+├── tests/
+├── data/
+└── README.md
+```
+
+## Installation
+
+- this is for robotframework installation
+
+```bash
+pip install robotframework
+```
+
+- this is for selenium library
+
+```bash
+pip install robotframework-seleniumlibrary
+```
+
 ## Run Test
 
 Run all test cases:
