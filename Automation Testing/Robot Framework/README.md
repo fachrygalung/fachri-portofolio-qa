@@ -13,3 +13,17 @@ Automation testing menggunakan Robot Framework dengan SeleniumLibrary pada websi
 - Python 3.10
 - Chrome Browser
 - VS Code Editor
+
+## Run Test
+
+Run all test cases:
+
+```bash
+robot tests/
+```
+
+Run login test only:
+
+```bash
+robot tests/login.robot
+```
