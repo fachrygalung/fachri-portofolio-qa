@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.20 on darwin)" generated="2026-06-30T10:12:35.221108" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="/Users/vickyanaruslina/Documents/fachri-portofolio-qa/Automation Testing/Robot Framework/Sauce Demo/tests/login.robot">
+<kw name="Open Browser and Navigate to Sauce Demo" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:12:35.382354" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>browser=${browser}</arg>
+<arg>url=${url}[${env}]</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-30T10:12:35.382183" elapsed="32.542649"/>
+</kw>
+<kw name="Landed on Sauce Demo Page Successfully" owner="setup">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=xpath=//div[@class="login_logo"]</arg>
+<arg>timeout=10s</arg>
+<arg>error=browser not loaded</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:07.926898" elapsed="0.021462"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:07.926370" elapsed="0.022076"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:12:35.381786" elapsed="32.566708"/>
+</kw>
+<test id="s1-t1" name="Successfully Login to Sauce Demo Web" line="8">
+<kw name="Given Landed on Sauce Demo Page Successfully" owner="setup">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=xpath=//div[@class="login_logo"]</arg>
+<arg>timeout=10s</arg>
+<arg>error=browser not loaded</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:07.949295" elapsed="0.012392"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:07.949120" elapsed="0.012666"/>
+</kw>
+<kw name="When User Input Username" owner="loginStep">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${inputUsername}</arg>
+<arg>timeout=10s</arg>
+<arg>error=text input username not visible</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:07.962547" elapsed="0.014215"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:07.977723" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>locator=${inputUsername}</arg>
+<arg>text=${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T10:13:07.977391" elapsed="0.143594"/>
+</kw>
+<arg>username=${username}[${env}]</arg>
+<status status="PASS" start="2026-06-30T10:13:07.962238" elapsed="0.158943"/>
+</kw>
+<kw name="And User Input Password" owner="loginStep">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${inputPass}</arg>
+<arg>timeout=10s</arg>
+<arg>error=text input passwrod not visible</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.121788" elapsed="0.012470"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.134926" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>locator=${inputPass}</arg>
+<arg>text=${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.134517" elapsed="0.048153"/>
+</kw>
+<arg>password=${pass}[${env}]</arg>
+<status status="PASS" start="2026-06-30T10:13:08.121515" elapsed="0.061249"/>
+</kw>
+<kw name="And I Click Login Button" owner="loginStep">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${buttonLogin}</arg>
+<arg>timeout=10s</arg>
+<arg>error=button login not visible</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.183131" elapsed="0.009826"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.193414" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>locator=${buttonLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.193127" elapsed="0.060105"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.182946" elapsed="0.070411"/>
+</kw>
+<kw name="Then User Login Sauce Demo Successfully" owner="loginStep">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${shopCartIcon}</arg>
+<arg>timeout=10s</arg>
+<arg>error=shop cart icon not visible</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.253880" elapsed="0.022603"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.253675" elapsed="0.022992"/>
+</kw>
+<kw name="Clearing Test" owner="setup" type="TEARDOWN">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.277964" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>url=${url}[${env}]</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.277787" elapsed="0.029075"/>
+</kw>
+<kw name="Landed on Sauce Demo Page Successfully" owner="setup">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=xpath=//div[@class="login_logo"]</arg>
+<arg>timeout=10s</arg>
+<arg>error=browser not loaded</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.307226" elapsed="0.009173"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.307030" elapsed="0.009454"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.322716" level="INFO">Element 'xpath=//div[@class="login_logo"]' is displayed.</msg>
+<arg>xpath=//div[@class="login_logo"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.316958" elapsed="0.005822"/>
+</kw>
+<msg time="2026-06-30T10:13:08.322882" level="INFO">${isLandingPage} = True</msg>
+<var>${isLandingPage}</var>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=//div[@class="login_logo"]</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.316596" elapsed="0.006303"/>
+</kw>
+<if>
+<branch type="IF" condition="${isLandingPage} == ${False}">
+<kw name="Log" owner="BuiltIn">
+<arg>process logout and back to landing page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-06-30T10:13:08.324604" elapsed="0.000026"/>
+</kw>
+<status status="NOT RUN" start="2026-06-30T10:13:08.322982" elapsed="0.001676"/>
+</branch>
+<status status="PASS" start="2026-06-30T10:13:08.322962" elapsed="0.001719"/>
+</if>
+<status status="PASS" start="2026-06-30T10:13:08.277225" elapsed="0.047491"/>
+</kw>
+<doc>expectation is logged in to sauce demo application</doc>
+<tag>positive</tag>
+<status status="PASS" start="2026-06-30T10:13:07.948602" elapsed="0.376178"/>
+</test>
+<test id="s1-t2" name="Failed Login to Sauce Demo Web, Username and Password is Empty" line="17">
+<kw name="Given Landed on Sauce Demo Page Successfully" owner="setup">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=xpath=//div[@class="login_logo"]</arg>
+<arg>timeout=10s</arg>
+<arg>error=browser not loaded</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.325379" elapsed="0.006716"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.325230" elapsed="0.006952"/>
+</kw>
+<kw name="When I Click Login Button" owner="loginStep">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${buttonLogin}</arg>
+<arg>timeout=10s</arg>
+<arg>error=button login not visible</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.332512" elapsed="0.007627"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.340608" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>locator=${buttonLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.340287" elapsed="0.034702"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.332347" elapsed="0.042742"/>
+</kw>
+<kw name="Then User Login Sauce Demo Failed" owner="loginStep">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${errorShown}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.375504" elapsed="0.008836"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.396297" level="INFO">${text} = Epic sadface: Username is required</msg>
+<var>${text}</var>
+<arg>locator=${errorShown}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.384482" elapsed="0.011852"/>
+</kw>
+<kw name="Set Test Message" owner="BuiltIn">
+<msg time="2026-06-30T10:13:08.396738" level="INFO">Set test message to:
+showing alert message "Epic sadface: Username is required"</msg>
+<arg>message=showing alert message "${text}"</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.396474" elapsed="0.000295"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.375297" elapsed="0.021519"/>
+</kw>
+<kw name="Clearing Test" owner="setup" type="TEARDOWN">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.397421" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>url=${url}[${env}]</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.397246" elapsed="0.018964"/>
+</kw>
+<kw name="Landed on Sauce Demo Page Successfully" owner="setup">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=xpath=//div[@class="login_logo"]</arg>
+<arg>timeout=10s</arg>
+<arg>error=browser not loaded</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.416609" elapsed="0.008104"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.416382" elapsed="0.008415"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.432612" level="INFO">Element 'xpath=//div[@class="login_logo"]' is displayed.</msg>
+<arg>xpath=//div[@class="login_logo"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.425113" elapsed="0.007562"/>
+</kw>
+<msg time="2026-06-30T10:13:08.432763" level="INFO">${isLandingPage} = True</msg>
+<var>${isLandingPage}</var>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=//div[@class="login_logo"]</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.424893" elapsed="0.007885"/>
+</kw>
+<if>
+<branch type="IF" condition="${isLandingPage} == ${False}">
+<kw name="Log" owner="BuiltIn">
+<arg>process logout and back to landing page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-06-30T10:13:08.432983" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2026-06-30T10:13:08.432838" elapsed="0.000183"/>
+</branch>
+<status status="PASS" start="2026-06-30T10:13:08.432822" elapsed="0.000219"/>
+</if>
+<status status="PASS" start="2026-06-30T10:13:08.397019" elapsed="0.036053"/>
+</kw>
+<doc>expectation is showing error alert</doc>
+<tag>negative</tag>
+<status status="PASS" start="2026-06-30T10:13:08.324935" elapsed="0.108194">showing alert message "Epic sadface: Username is required"</status>
+</test>
+<test id="s1-t3" name="Failed Login to Sauce Demo Web, Password is Empty" line="24">
+<kw name="Given Landed on Sauce Demo Page Successfully" owner="setup">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=xpath=//div[@class="login_logo"]</arg>
+<arg>timeout=10s</arg>
+<arg>error=browser not loaded</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.433785" elapsed="0.007756"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.433550" elapsed="0.008074"/>
+</kw>
+<kw name="When User Input Username" owner="loginStep">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${inputUsername}</arg>
+<arg>timeout=10s</arg>
+<arg>error=text input username not visible</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.442021" elapsed="0.007260"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.449641" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>locator=${inputUsername}</arg>
+<arg>text=${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.449416" elapsed="0.058162"/>
+</kw>
+<arg>username=${username}[${env}]</arg>
+<status status="PASS" start="2026-06-30T10:13:08.441792" elapsed="0.065933"/>
+</kw>
+<kw name="And I Click Login Button" owner="loginStep">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${buttonLogin}</arg>
+<arg>timeout=10s</arg>
+<arg>error=button login not visible</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.508483" elapsed="0.015295"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.524161" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>locator=${buttonLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.523944" elapsed="0.033548"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.508244" elapsed="0.049333"/>
+</kw>
+<kw name="Then User Login Sauce Demo Failed" owner="loginStep">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${errorShown}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.557927" elapsed="0.015973"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.582019" level="INFO">${text} = Epic sadface: Password is required</msg>
+<var>${text}</var>
+<arg>locator=${errorShown}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.574035" elapsed="0.008015"/>
+</kw>
+<kw name="Set Test Message" owner="BuiltIn">
+<msg time="2026-06-30T10:13:08.582383" level="INFO">Set test message to:
+showing alert message "Epic sadface: Password is required"</msg>
+<arg>message=showing alert message "${text}"</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.582163" elapsed="0.000251"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.557753" elapsed="0.024709"/>
+</kw>
+<kw name="Clearing Test" owner="setup" type="TEARDOWN">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.583252" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>url=${url}[${env}]</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.583131" elapsed="0.047466"/>
+</kw>
+<kw name="Landed on Sauce Demo Page Successfully" owner="setup">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=xpath=//div[@class="login_logo"]</arg>
+<arg>timeout=10s</arg>
+<arg>error=browser not loaded</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.631610" elapsed="0.008251"/>
+</kw>
+<status status="PASS" start="2026-06-30T10:13:08.631311" elapsed="0.008639"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-06-30T10:13:08.647141" level="INFO">Element 'xpath=//div[@class="login_logo"]' is displayed.</msg>
+<arg>xpath=//div[@class="login_logo"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.640316" elapsed="0.006904"/>
+</kw>
+<msg time="2026-06-30T10:13:08.647314" level="INFO">${isLandingPage} = True</msg>
+<var>${isLandingPage}</var>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=//div[@class="login_logo"]</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-06-30T10:13:08.640047" elapsed="0.007283"/>
+</kw>
+<if>
+<branch type="IF" condition="${isLandingPage} == ${False}">
+<kw name="Log" owner="BuiltIn">
+<arg>process logout and back to landing page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-06-30T10:13:08.647565" elapsed="0.000018"/>
+</kw>
+<status status="NOT RUN" start="2026-06-30T10:13:08.647393" elapsed="0.000214"/>
+</branch>
+<status status="PASS" start="2026-06-30T10:13:08.647376" elapsed="0.000251"/>
+</if>
+<status status="PASS" start="2026-06-30T10:13:08.582920" elapsed="0.064763"/>
+</kw>
+<doc>expectation is showing error alert password empty</doc>
+<tag>negative</tag>
+<status status="PASS" start="2026-06-30T10:13:08.433266" elapsed="0.214490">showing alert message "Epic sadface: Password is required"</status>
+</test>
+<status status="PASS" start="2026-06-30T10:12:35.222454" elapsed="33.425583"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">negative</stat>
+<stat pass="1" fail="0" skip="0">positive</stat>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="3" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
