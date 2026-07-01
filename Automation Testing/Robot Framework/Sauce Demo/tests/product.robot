@@ -1,5 +1,6 @@
 *** Settings ***
 Resource           ../resources/keywords/productStep.robot
+Resource           ../resources/keywords/addCartStep.robot
 Resource           ../config/setup.robot
 Suite Setup        Open Browser and Navigate to Sauce Demo    withLogin=${True}
 Test Teardown      Clearing Test                              backToLogin=${False}
