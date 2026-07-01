@@ -1,8 +1,8 @@
 *** Settings ***
-Resource    ../resources/keywords/productStep.robot
-Resource    ../config/setup.robot
-Suite Setup    Open Browser and Navigate to Sauce Demo    withLogin=${True}
-Test Teardown    Clearing Test    backToLogin=${False}
+Resource           ../resources/keywords/productStep.robot
+Resource           ../config/setup.robot
+Suite Setup        Open Browser and Navigate to Sauce Demo    withLogin=${True}
+Test Teardown      Clearing Test                              backToLogin=${False}
 
 *** Test Cases ***
 As User, I want to sorting product by Name A to Z

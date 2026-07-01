@@ -64,6 +64,18 @@ Run login test only:
 robot tests/login.robot
 ```
 
+## Test Coverage
+
+| Module | Test Scenario | Status |
+|--------|---------------|--------|
+| Login | Valid login | ✅ |
+| Login | Invalid login | ✅ |
+| Products | View product list | ✅ |
+| Products | Change filter sorting product list | ✅ |
+| Products | Add product to cart | ✅ |
+| Checkout | Complete checkout | ✅ |
+| Logout | Logout successfully | ✅ |
+
 ## 📊 Test Reports
 
 After executing the test suite, Robot Framework generates the following reports:
@@ -84,6 +96,7 @@ After executing the test suite, Robot Framework generates the following reports:
 
 - Detail Log Preview
 ![Log](./Sauce%20Demo/screenshot/detail%20log.png)
+
 
 ## 👨‍💻 Author
 
